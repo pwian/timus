@@ -20,7 +20,7 @@ namespace _1010
             return Convert.ToInt32(Console.ReadLine());
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             long n = GetNumberInt();
             long[] func = new long[n];
