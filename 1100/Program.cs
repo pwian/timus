@@ -21,16 +21,6 @@ namespace _1100
             return array;
         }
 
-        static void Swap(int[,] list, int i, int j)
-        {
-            int buf = list[i, 0];
-            list[i, 0] = list[j, 0];
-            list[j, 0] = buf;
-            buf = list[i, 1];
-            list[i, 1] = list[j, 1];
-            list[j, 1] = buf;
-        }
-
         static void Main(string[] args)
         {
             int n = GetNumberInt();
@@ -49,6 +39,7 @@ namespace _1100
                     sort.Add(array[1], array[0]);
 
             }
+
             for (int i = sort.Count - 1; i >= 0; i--)
             {
                 for (int j = 0; j < list.GetLength(0); j++)
